@@ -18,7 +18,7 @@ public class SeleniumOperations
 		driver=new ChromeDriver(option);
 		driver.manage().window().maximize();
 		
-		
+		System.out.println("hello");
 	}
 	public static void openurl(String str) {
 		driver.get(str);
@@ -33,6 +33,6 @@ public class SeleniumOperations
 		
 		driver.findElement(By.xpath(str)).sendKeys(str1);
 	}
-	
+
 
 }
